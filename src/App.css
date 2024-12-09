@@ -1,0 +1,116 @@
+html {
+  background-image: url("./assets/webbackground.png");
+  background-size: 200%;
+  image-rendering: pixelated;
+}
+
+.App {
+  text-align: center;
+  image-rendering: auto;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 48pt;
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 32pt;
+}
+
+p {
+  font-family: Metropolis, sans-serif;
+  font-size: 18pt;
+}
+
+.navbar{
+  background-color: #4A5043;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.navButton{
+  width:185px;
+  height: 40px;
+  background-color: #4A5043;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButton > p{
+  font-size: 24pt;
+  text-decoration: none;
+  color: white;
+}
+
+.navButton:hover{
+  background-color: #5b6352;
+}
+
+.navButton:active{
+  background-color: #E85D75;
+}
+
+.biopage{
+  min-height: 100vh;
+  max-height: 100vh;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(168deg, #fc9790dd 0%, #d4595ddd 30%, #d4595d00 60%);
+}
+
+.biopic{
+  flex: 2 2;
+  border-radius: 50%;
+  box-shadow: 5px 15px 15px;
+}
+
+.biopage > h{
+  flex: 1 1;
+}
+
+.biopage > p{
+  flex: 1 1;
+}
+
+.projectContainer{
+  background-color: #e8e7b7;
+  border-radius: 20px;
+  margin: 50px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content:stretch;
+  align-items: stretch;
+  box-shadow: 5px 15px 15px;
+}
+
+.projectIcon{
+  flex: 1 1;
+  min-height: 0%;
+  min-width: 0%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.projectContent{
+  color: #242424;
+  flex: 2 2;
+  padding: 30px;
+  text-align: left;
+  display: block;
+}
