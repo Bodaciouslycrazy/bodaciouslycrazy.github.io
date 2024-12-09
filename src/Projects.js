@@ -49,7 +49,7 @@ const workProjects = [
         <>
             <h2>Highlandia</h2>
             <p>
-                An educational app meant to teach Engligh to non-native English speakers using fun games!
+                An educational app meant to teach English to non-native English speakers using fun games!
                 <br/>
                 <ul>
                     <li>Envisioned and developed "Tracer" game to teach users how to write engligh letters</li>
