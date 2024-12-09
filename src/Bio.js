@@ -1,4 +1,4 @@
-import bioPic from "./assets/BioPic.png"
+import bioPic from "./assets/BioPic.jpeg"
 
 function Bio(){
     return(

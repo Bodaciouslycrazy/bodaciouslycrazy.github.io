@@ -12,18 +12,18 @@ html {
 h1 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 48pt;
+  font-size: 4em;
 }
 
 h2 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 32pt;
+  font-size: 3em;
 }
 
 p {
   font-family: Metropolis, sans-serif;
-  font-size: 18pt;
+  font-size: 1.8em;
 }
 
 .navbar{
@@ -45,7 +45,7 @@ p {
 }
 
 .navButton > p{
-  font-size: 24pt;
+  font-size: 2em;
   text-decoration: none;
   color: white;
 }
