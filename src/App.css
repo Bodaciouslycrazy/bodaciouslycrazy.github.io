@@ -1,3 +1,25 @@
+:root{
+  --h1size: 4em;
+  --h2size: 3em;
+  --psize: 1.8em;
+  --navtextsize: 2em;
+  --navbuttonwidth: 185px;
+  --navbuttonheight: 40px;
+  --projectpadding: 30px;
+}
+
+@media (max-width: 45em) {
+  :root{
+    --h1size: 2em;
+    --h2size: 1.5em;
+    --psize: 0.9em;
+    --navtextsize: 1em;
+    --navbuttonwidth: 100px;
+    --navbuttonheight: 30px;
+    --projectpadding:15px;
+  }
+}
+
 html {
   background-image: url("./assets/webbackground.png");
   background-size: 200%;
@@ -12,18 +34,18 @@ html {
 h1 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 4em;
+  font-size: var(--h1size);
 }
 
 h2 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 3em;
+  font-size: var(--h2size);
 }
 
 p {
   font-family: Metropolis, sans-serif;
-  font-size: 1.8em;
+  font-size: var(--psize);
 }
 
 .navbar{
@@ -36,8 +58,8 @@ p {
 }
 
 .navButton{
-  width:185px;
-  height: 40px;
+  width: var(--navbuttonwidth);
+  height: var(--navbuttonheight);
   background-color: #4A5043;
   display:flex;
   justify-content: center;
@@ -45,7 +67,7 @@ p {
 }
 
 .navButton > p{
-  font-size: 2em;
+  font-size: var(--navtextsize);
   text-decoration: none;
   color: white;
 }
@@ -61,29 +83,41 @@ p {
 .biopage{
   min-height: 100vh;
   max-height: 100vh;
-  padding-left: 25%;
-  padding-right: 25%;
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-image: linear-gradient(168deg, #fc9790dd 0%, #d4595ddd 30%, #d4595d00 60%);
+}
+
+.biospacer{
+  flex: 1 1 10%;
+}
+
+.bioinfo{
+  flex: 8 0 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(168deg, #fc9790dd 0%, #d4595ddd 30%, #d4595d00 60%);
 }
 
 .biopic{
-  flex: 2 2;
+  flex: 0 2 40%;
   border-radius: 50%;
   box-shadow: 5px 15px 15px;
 }
 
 .biopage > h{
-  flex: 1 1;
+  flex: 0 0 20%;
 }
 
 .biopage > p{
-  flex: 1 1;
+  flex: 0 0 40%;
+  margin-left: max(25%, 15px);
+  margin-right: max(25%, 15px);
 }
 
 .projectContainer{
@@ -99,9 +133,9 @@ p {
 }
 
 .projectIcon{
-  flex: 1 1;
+  flex: 1 0 25%;
   min-height: 0%;
-  min-width: 0%;
+  min-width: 30%;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
@@ -109,8 +143,8 @@ p {
 
 .projectContent{
   color: #242424;
-  flex: 2 2;
-  padding: 30px;
+  flex: 2 1 75%;
+  padding: var(--projectpadding);
   text-align: left;
   display: block;
 }
