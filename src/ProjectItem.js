@@ -1,17 +1,30 @@
 
+import { useMediaQuery } from "react-responsive";
+
 // Pass in property rightAlign=true or false
 function ProjectItem(props){
+    const isMobile = useMediaQuery({
+        query: "(max-width: 45em)"
+    });
+
     const style = {
-        backgroundImage: `url(${props.img})`,
+        flexDirection: (isMobile ? "column" : (props.rightAlign ? "row-reverse" : "row")),
+        minHeight: isMobile ? "0px" : "400px"
     }
 
+    const imageStyle = {
+        backgroundImage: `url(${props.img})`,
+        minHeight: isMobile ? "200px" : "0px"
+    }
+
+
+
     return (
-        <div className="projectContainer">
-            {!props.rightAlign && <div className="projectIcon" style={style}/> }
+        <div className="projectContainer" style={style}>
+            <div className="projectIcon" style={imageStyle}/>
             <div className="projectContent">
                 {props.children}
             </div>
-            {props.rightAlign && <div className="projectIcon" style={style}/> }
         </div>
     )
 }
