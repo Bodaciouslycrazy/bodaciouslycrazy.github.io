@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.82032942.css",
-    "main.js": "/static/js/main.3ced10c4.js",
+    "main.js": "/static/js/main.4988b367.js",
     "static/media/Packrat.png": "/static/media/Packrat.1452860e65afde117040.png",
     "static/media/Highlandia.png": "/static/media/Highlandia.281db60a5d4971bf47bc.png",
     "static/media/ScrabbleVision.jpg": "/static/media/ScrabbleVision.d1ec52a9459d05c3158f.jpg",
@@ -13,10 +13,10 @@
     "static/media/webbackground.png": "/static/media/webbackground.40df75827a6eae6461bd.png",
     "index.html": "/index.html",
     "main.82032942.css.map": "/static/css/main.82032942.css.map",
-    "main.3ced10c4.js.map": "/static/js/main.3ced10c4.js.map"
+    "main.4988b367.js.map": "/static/js/main.4988b367.js.map"
   },
   "entrypoints": [
     "static/css/main.82032942.css",
-    "static/js/main.3ced10c4.js"
+    "static/js/main.4988b367.js"
   ]
 }
