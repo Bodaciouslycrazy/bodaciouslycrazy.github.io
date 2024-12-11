@@ -10,10 +10,10 @@
 
 @media (max-width: 45em) {
   :root{
-    --h1size: 2em;
-    --h2size: 1.5em;
-    --psize: 0.9em;
-    --navtextsize: 1em;
+    --h1size: 3em;
+    --h2size: 2em;
+    --psize: 1.2em;
+    --navtextsize: 1.1em;
     --navbuttonwidth: 100px;
     --navbuttonheight: 30px;
     --projectpadding:15px;
@@ -105,19 +105,19 @@ p {
 }
 
 .biopic{
-  flex: 0 2 40%;
+  flex: 0 2 35%;
+  object-fit: contain;
+  min-height: 0%;
   border-radius: 50%;
   box-shadow: 5px 15px 15px;
 }
 
-.biopage > h{
-  flex: 0 0 20%;
+.bioinfo > h1{
+  flex: 0 0;
 }
 
-.biopage > p{
-  flex: 0 0 40%;
-  margin-left: max(25%, 15px);
-  margin-right: max(25%, 15px);
+.bioinfo > p{
+  flex: 0 0;
 }
 
 .projectContainer{
