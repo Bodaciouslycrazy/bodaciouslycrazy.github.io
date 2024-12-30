@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.90ae9443.css",
-    "main.js": "/static/js/main.0fac7c55.js",
+    "main.css": "/static/css/main.876d61b8.css",
+    "main.js": "/static/js/main.4a42f6b0.js",
     "static/media/Packrat.png": "/static/media/Packrat.1452860e65afde117040.png",
     "static/media/Highlandia.png": "/static/media/Highlandia.281db60a5d4971bf47bc.png",
     "static/media/ScrabbleVision.jpg": "/static/media/ScrabbleVision.d1ec52a9459d05c3158f.jpg",
@@ -9,15 +9,16 @@
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.e20d5327f1a05620c084.ttf",
     "static/media/Induction.otf": "/static/media/Induction.58cacf6e53c0edfee0ba.otf",
     "static/media/BioPic.jpeg": "/static/media/BioPic.c65964d1dbfe847183b6.jpeg",
+    "static/media/Metropolis-SemiBold.otf": "/static/media/Metropolis-SemiBold.5e856013947c22fbcdf4.otf",
     "static/media/Metropolis-Regular.otf": "/static/media/Metropolis-Regular.67a1988d7b65b0aaa16d.otf",
     "static/media/HiveBot.png": "/static/media/HiveBot.cfe1cd1aa1147a9be7d9.png",
     "static/media/webbackground.png": "/static/media/webbackground.40df75827a6eae6461bd.png",
     "index.html": "/index.html",
-    "main.90ae9443.css.map": "/static/css/main.90ae9443.css.map",
-    "main.0fac7c55.js.map": "/static/js/main.0fac7c55.js.map"
+    "main.876d61b8.css.map": "/static/css/main.876d61b8.css.map",
+    "main.4a42f6b0.js.map": "/static/js/main.4a42f6b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.90ae9443.css",
-    "static/js/main.0fac7c55.js"
+    "static/css/main.876d61b8.css",
+    "static/js/main.4a42f6b0.js"
   ]
 }
