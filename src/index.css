@@ -39,3 +39,10 @@ code {
   src: local("Metropolis-Regular"),
     url("./assets/Metropolis-Regular.otf") format("opentype")
 }
+
+@font-face {
+  font-family: Metropolis;
+  font-weight: bold;
+  src: local("Metropolis-SemiBold"),
+    url("./assets/Metropolis-SemiBold.otf") format("opentype")
+}

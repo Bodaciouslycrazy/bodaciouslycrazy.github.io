@@ -13,7 +13,7 @@
   :root{
     --h1size: 2.5em;
     --h2size: 1.8em;
-    --psize: 1em;
+    --psize: 1.1em;
     --navtextsize: 1.1em;
     --navbuttonwidth: 100px;
     --navbuttonheight: 30px;
@@ -37,16 +37,22 @@ h1 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: var(--h1size);
+  color: #fff1df;
+  text-shadow: #202020 0px 0px 20px;
+  text-decoration: underline;
 }
 
 h2 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
+  color: #fff1df;
   font-size: var(--h2size);
 }
 
 p {
   font-family: Metropolis, sans-serif;
+  font-weight: bold;
+  color: #fff1df;
   font-size: var(--psize);
 }
 
@@ -84,7 +90,7 @@ p {
 
 .biopage{
   min-height: 100vh;
-  max-height: 100vh;
+  /*max-height: 100vh;*/
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -92,14 +98,15 @@ p {
   justify-content: center;
   align-items: stretch;
   background-image: linear-gradient(168deg, #fc9790dd 0%, #d4595ddd 30%, #d4595d00 60%);
+  overflow: hidden;
 }
 
 .biospacer{
-  flex: 1 1 10%;
+  flex: 1 0 20px;
 }
 
 .bioinfo{
-  flex: 8 0 80%;
+  flex: 1 1 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,11 +123,13 @@ p {
 
 .bioinfo > h1{
   flex: 0 0;
+  color: #fff1df;
+  text-decoration: none;
 }
 
 .bioinfo > p{
-  flex: 1 0 35%;
-  vertical-align: middle;
+  flex: 1 1 35%;
+  color: #fff1df;
 }
 
 .projectContainer{
@@ -150,4 +159,12 @@ p {
   padding: var(--projectpadding);
   text-align: left;
   display: block;
+}
+
+.projectContent > *{
+  color: inherit;
+}
+
+.projectContent > p{
+  font-weight: normal;
 }
