@@ -6,17 +6,19 @@
   --navbuttonwidth: 185px;
   --navbuttonheight: 40px;
   --projectpadding: 30px;
+  --projectborderradius: 20px;
 }
 
 @media (max-width: 45em) {
   :root{
-    --h1size: 3em;
-    --h2size: 2em;
-    --psize: 1.2em;
+    --h1size: 2.5em;
+    --h2size: 1.8em;
+    --psize: 1em;
     --navtextsize: 1.1em;
     --navbuttonwidth: 100px;
     --navbuttonheight: 30px;
-    --projectpadding:15px;
+    --projectpadding: 10px;
+    --projectborderradius: 10px;
   }
 }
 
@@ -104,8 +106,8 @@ p {
   align-items: center;
 }
 
-.biopic{
-  flex: 0 2 35%;
+.bioinfo > img{
+  flex: 1 1 35%;
   object-fit: contain;
   min-height: 0%;
   border-radius: 50%;
@@ -117,12 +119,13 @@ p {
 }
 
 .bioinfo > p{
-  flex: 0 0;
+  flex: 1 0 35%;
+  vertical-align: middle;
 }
 
 .projectContainer{
   background-color: #f3dea2;
-  border-radius: 20px;
+  border-radius: var(--projectborderradius);
   margin: 50px;
   min-height: 400px;
   display: flex;
@@ -136,7 +139,7 @@ p {
   flex: 1 0 25%;
   min-height: 0%;
   min-width: 30%;
-  border-radius: 20px;
+  border-radius: var(--projectborderradius);
   background-size: cover;
   background-position: center;
 }
