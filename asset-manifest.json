@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b75aa6b6.css",
+    "main.css": "/static/css/main.691dec94.css",
     "main.js": "/static/js/main.b95bdea1.js",
     "static/media/Packrat.png": "/static/media/Packrat.1452860e65afde117040.png",
     "static/media/Highlandia.png": "/static/media/Highlandia.281db60a5d4971bf47bc.png",
@@ -15,11 +15,11 @@
     "static/media/HiveBot.png": "/static/media/HiveBot.cfe1cd1aa1147a9be7d9.png",
     "static/media/webbackground.png": "/static/media/webbackground.40df75827a6eae6461bd.png",
     "index.html": "/index.html",
-    "main.b75aa6b6.css.map": "/static/css/main.b75aa6b6.css.map",
+    "main.691dec94.css.map": "/static/css/main.691dec94.css.map",
     "main.b95bdea1.js.map": "/static/js/main.b95bdea1.js.map"
   },
   "entrypoints": [
-    "static/css/main.b75aa6b6.css",
+    "static/css/main.691dec94.css",
     "static/js/main.b95bdea1.js"
   ]
 }
