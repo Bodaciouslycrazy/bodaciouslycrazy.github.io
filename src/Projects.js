@@ -4,6 +4,7 @@ import scrabbleImage from "./assets/ScrabbleVision.jpg";
 import highlandiaImage from "./assets/Highlandia.png";
 import cosmicCadenceImage from "./assets/CosmicCadence.png";
 import hiveBotImage from "./assets/HiveBot.png";
+import ActionButton from "./ActionButton";
 
 const workProjects = [
     {
@@ -17,11 +18,11 @@ const workProjects = [
                 <br/>
                 <ul>
                     <li>Rebuilt the entire game client from scratch using Unity3D and C#</li>
-                    <li>Refactored the code base to follow MVC patterns to improve development for future devs</li>
+                    <li>Eliminated 12 years of tech-debt and improved structure for future devs</li>
                     <li>Provided continuous support, bug fixes and new features</li>
                 </ul>
                 <br/>
-                Play now at <a href="https://playpackrat.com">playpackrat.com</a>
+                {ActionButton({text:"Play Packrat", link:"https://playpackrat.com"})}
             </p>
         </>
     },
@@ -39,6 +40,8 @@ const workProjects = [
                     <li>Includes optional scrabble rules, like challenging plays</li>
                     <li>Connected the front-end to the back-end API for leaderboards and other online functionality</li>
                 </ul>
+                <br/>
+                {ActionButton({text:"Learn More", link:"https://hookbang.com/portfolio/scrabblevision/"})}
             </p>
         </>
     },
@@ -56,6 +59,8 @@ const workProjects = [
                     <li>Programmed game logic for "Speak Up" game which uses the microphone to detect user speech</li>
                     <li>Created data management tools and systems to manage the large number of levels in Highlandia</li>
                 </ul>
+                <br/>
+                {ActionButton({text:"Learn More", link:"https://www.createneptune.com/highlandia"})}
             </p>
         </>
     }
@@ -76,7 +81,8 @@ const personalProjects = [
                     <li>Arrythmia (April 2020 - Theme: Keep it Alive)</li>
                     <li>Curiosity (April 2021 - Theme: Deeper and Deeper)</li>
                 </ul>
-                Check them out at <a href="https://bodaciouslycrazy.itch.io/">bodaciouslycrazy.itch.io/</a>
+                <br/>
+                {ActionButton({text:"Play Now", link:"https://bodaciouslycrazy.itch.io"})}
             </p>
         </>
     },
@@ -90,6 +96,7 @@ const personalProjects = [
                 A discord bot that allows friends to play the board game "Hive" through text chat. Programmed entirely in Python, and built to run on a raspberry pi as a server.
                 Currently in use in a private discord server with friends.
             </p>
+            <br/>
         </>
     }
 ]
@@ -98,17 +105,21 @@ function Projects(){
     return (
         <div id="projects">
             <h1>Work Projects</h1>
-            {workProjects.map( (el, index) => { return (
-            <ProjectItem key={el.key} img={el.image} rightAlign={index%2 === 1}>
-                {el.content}
-            </ProjectItem>);
-            })}
-            <h1>Personal Projects</h1>
-            {personalProjects.map((el, index) => { return (
-                <ProjectItem key={el.key} img={el.image} rightAlign={(index+workProjects.length)%2 === 1}>
+            <div className="projectList">
+                {workProjects.map( (el, index) => { return (
+                <ProjectItem key={el.key} img={el.image} rightAlign={false}>
                     {el.content}
                 </ProjectItem>);
-            })}
+                })}
+            </div>
+            <h1>Personal Projects</h1>
+            <div className="projectList">
+                {personalProjects.map((el, index) => { return (
+                    <ProjectItem key={el.key} img={el.image} rightAlign={false}>
+                        {el.content}
+                    </ProjectItem>);
+                })}
+            </div>
         </div>
     );
 }

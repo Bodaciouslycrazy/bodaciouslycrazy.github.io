@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 // Pass in property rightAlign=true or false
 function ProjectItem(props){
     const isMobile = useMediaQuery({
-        query: "(max-width: 45em)"
+        query: "(orientation: portrait)"
     });
 
     const style = {
@@ -16,7 +16,6 @@ function ProjectItem(props){
         backgroundImage: `url(${props.img})`,
         minHeight: isMobile ? "200px" : "0px"
     }
-
 
 
     return (

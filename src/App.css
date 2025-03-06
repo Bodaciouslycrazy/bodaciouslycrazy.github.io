@@ -1,15 +1,17 @@
 :root{
   --h1size: 4em;
   --h2size: 3em;
-  --psize: 1.8em;
+  --psize: 1.75em;
   --navtextsize: 2em;
   --navbuttonwidth: 185px;
   --navbuttonheight: 40px;
-  --projectpadding: 30px;
+  --projectmargin: 50px;
+  --projectcontentpadding: 30px;
   --projectborderradius: 20px;
+  --contactbuttonsize: 200px;
 }
 
-@media (max-width: 45em) {
+@media (orientation: portrait) {
   :root{
     --h1size: 2.5em;
     --h2size: 1.8em;
@@ -17,15 +19,23 @@
     --navtextsize: 1.1em;
     --navbuttonwidth: 100px;
     --navbuttonheight: 30px;
-    --projectpadding: 10px;
+    --projectmargin: 30px;
+    --projectcontentpadding: 20px;
     --projectborderradius: 10px;
+    --contactbuttonsize: 150px;
   }
 }
 
 html {
   background-image: url("./assets/webbackground.png");
-  background-size: 200%;
+  background-size: 2048px;
   image-rendering: pixelated;
+}
+
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -63,6 +73,7 @@ p {
   width: 100%;
   display: flex;
   align-items: stretch;
+  gap: 30px;
 }
 
 .navButton{
@@ -90,64 +101,74 @@ p {
 
 .biopage{
   min-height: 100vh;
-  /*max-height: 100vh;*/
-  padding-top: 50px;
+  padding-top: var(--navbuttonheight);
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: stretch;
   background-image: linear-gradient(168deg, #fc9790dd 0%, #d4595ddd 30%, #d4595d00 60%);
   overflow: hidden;
 }
 
-.biospacer{
-  flex: 1 0 20px;
-}
-
 .bioinfo{
-  flex: 1 1 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  margin-top: 75px;
+  margin-right: 50px;
+  margin-left: 50px;
+  max-width: 50em;
+}
+
+.bioinfo > *{
+  margin-bottom: 30px;
 }
 
 .bioinfo > img{
-  flex: 1 1 35%;
-  object-fit: contain;
-  min-height: 0%;
+  flex: 0 0 auto;
   border-radius: 50%;
   box-shadow: 5px 15px 15px;
+  align-content: flex-start;
+  max-height: 40vh;
+  min-height: 200px;
 }
 
 .bioinfo > h1{
-  flex: 0 0;
+  flex: 0 0 auto;
   color: #fff1df;
   text-decoration: none;
 }
 
 .bioinfo > p{
-  flex: 1 1 35%;
+  flex: 0 0 auto;
   color: #fff1df;
+}
+
+.projectList{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .projectContainer{
   background-color: #f3dea2;
-  border-radius: var(--projectborderradius);
-  margin: 50px;
   min-height: 400px;
+  margin: var(--projectmargin);
+  border-radius: var(--projectborderradius);
   display: flex;
   flex-direction: row;
-  justify-content:stretch;
+  justify-content: stretch;
   align-items: stretch;
   box-shadow: 5px 15px 15px;
 }
 
 .projectIcon{
-  flex: 1 0 25%;
+  flex: 1 0 30%;
   min-height: 0%;
-  min-width: 30%;
+  min-width: 80px;
   border-radius: var(--projectborderradius);
   background-size: cover;
   background-position: center;
@@ -155,16 +176,61 @@ p {
 
 .projectContent{
   color: #242424;
-  flex: 2 1 75%;
-  padding: var(--projectpadding);
-  text-align: left;
+  flex: 1 1 100%;
+  padding: var(--projectcontentpadding);
+  text-align: start;
   display: block;
+  list-style-position: inside;
 }
 
 .projectContent > *{
   color: inherit;
 }
 
+.projectContent > h2{
+  padding-bottom: 20px;
+}
+
 .projectContent > p{
   font-weight: normal;
+}
+
+.actionButton{
+  display: block;
+  width:fit-content;
+  border-image: url("./assets/Button9slice.png");
+  border-image-slice: 10 fill;
+  border-image-width: 20px;
+  image-rendering: pixelated;
+  padding: 20px;
+  margin: auto;
+  text-decoration: none;
+}
+
+.actionButton > p{
+  font-family: Pixel;
+  font-size: 1em;
+}
+
+.contactList{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactButton{
+  width: var(--contactbuttonsize);
+  height: var(--contactbuttonsize);
+  margin: 20px;
+  background-color: #f3dea2;
+  border-radius: var(--projectborderradius);
+  box-shadow: black 5px 15px 15px;
+}
+
+.contactButton > img{
+  image-rendering: pixelated;
+  width:80%;
+  height:80%;
+  margin: 10% 10% 10% 10%;
 }

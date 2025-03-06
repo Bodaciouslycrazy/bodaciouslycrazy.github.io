@@ -46,3 +46,10 @@ code {
   src: local("Metropolis-SemiBold"),
     url("./assets/Metropolis-SemiBold.otf") format("opentype")
 }
+
+@font-face {
+  font-family: Pixel;
+  font-weight: normal;
+  src: local("PressStart2P"),
+    url("./assets/PressStart2P-Regular.ttf") format("truetype")
+}
