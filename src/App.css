@@ -222,7 +222,7 @@ p {
 }
 
 .contactButton{
-  flex: 1 0 var(--contactbuttonsize);
+  flex: 0 0 var(--contactbuttonsize);
   width: var(--contactbuttonsize);
   height: var(--contactbuttonsize);
   margin: 20px;
