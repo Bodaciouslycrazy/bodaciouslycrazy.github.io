@@ -22,7 +22,7 @@
     --projectmargin: 30px;
     --projectcontentpadding: 20px;
     --projectborderradius: 10px;
-    --contactbuttonsize: 150px;
+    --contactbuttonsize: 120px;
   }
 }
 
@@ -220,6 +220,7 @@ p {
 }
 
 .contactButton{
+  flex: 1 0 var(--contactbuttonsize);
   width: var(--contactbuttonsize);
   height: var(--contactbuttonsize);
   margin: 20px;

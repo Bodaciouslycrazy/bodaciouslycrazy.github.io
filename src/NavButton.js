@@ -1,5 +1,4 @@
-import {React, Link} from "react";
-import { NavLink } from "react-router-dom";
+import {React} from "react";
 
 function handleClick(targetId){
     const element = document.getElementById(targetId);

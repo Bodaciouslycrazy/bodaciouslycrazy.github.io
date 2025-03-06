@@ -1,4 +1,3 @@
-import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Bio from './Bio.js';
 import Projects from './Projects.js'
