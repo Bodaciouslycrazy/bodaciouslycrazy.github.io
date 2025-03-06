@@ -5,6 +5,7 @@
   --navtextsize: 2em;
   --navbuttonwidth: 185px;
   --navbuttonheight: 40px;
+  --navbuttongap: 30px;
   --projectmargin: 50px;
   --projectcontentpadding: 30px;
   --projectborderradius: 20px;
@@ -19,6 +20,7 @@
     --navtextsize: 1.1em;
     --navbuttonwidth: 100px;
     --navbuttonheight: 30px;
+    --navbuttongap: 10px;
     --projectmargin: 30px;
     --projectcontentpadding: 20px;
     --projectborderradius: 10px;
@@ -73,7 +75,7 @@ p {
   width: 100%;
   display: flex;
   align-items: stretch;
-  gap: 30px;
+  gap: var(--navbuttongap);
 }
 
 .navButton{
