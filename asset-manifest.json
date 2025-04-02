@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f15e70a3.css",
-    "main.js": "/static/js/main.b95bdea1.js",
+    "main.js": "/static/js/main.a6329124.js",
+    "static/media/WheelCrisis.png": "/static/media/WheelCrisis.bd2e49a19897bcaef4c9.png",
     "static/media/Packrat.png": "/static/media/Packrat.1452860e65afde117040.png",
     "static/media/Highlandia.png": "/static/media/Highlandia.281db60a5d4971bf47bc.png",
     "static/media/ScrabbleVision.jpg": "/static/media/ScrabbleVision.d1ec52a9459d05c3158f.jpg",
@@ -16,10 +17,10 @@
     "static/media/webbackground.png": "/static/media/webbackground.40df75827a6eae6461bd.png",
     "index.html": "/index.html",
     "main.f15e70a3.css.map": "/static/css/main.f15e70a3.css.map",
-    "main.b95bdea1.js.map": "/static/js/main.b95bdea1.js.map"
+    "main.a6329124.js.map": "/static/js/main.a6329124.js.map"
   },
   "entrypoints": [
     "static/css/main.f15e70a3.css",
-    "static/js/main.b95bdea1.js"
+    "static/js/main.a6329124.js"
   ]
 }
