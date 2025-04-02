@@ -3,6 +3,7 @@ import packratImage from "./assets/Packrat.png";
 import scrabbleImage from "./assets/ScrabbleVision.jpg";
 import highlandiaImage from "./assets/Highlandia.png";
 import cosmicCadenceImage from "./assets/CosmicCadence.png";
+import wheelCrisisImage from "./assets/WheelCrisis.png"
 import hiveBotImage from "./assets/HiveBot.png";
 import ActionButton from "./ActionButton";
 
@@ -67,6 +68,22 @@ const workProjects = [
 ]
 
 const personalProjects = [
+    {
+        key: "wheelcrisis",
+        image: wheelCrisisImage,
+        content:
+        <>
+            <h2>Wheel Crisis</h2>
+            <p>
+                What happens when you combine Time Crisis and the Elder Scrolls: Oblivion Persuasion Wheel mechanic?
+                <br/>
+                A game built in one week for the <a href="https://itch.io/jam/wheeljam">Wheel Jam</a>! Currently being improved for a full release.
+                Keep an eye out for future updates!
+                <br/>
+                {ActionButton({text:"Play Now", link:"https://bodaciouslycrazy.itch.io/wheel-crisis"})}
+            </p>
+        </>
+    },
     {
         key: "ludumdare",
         image: cosmicCadenceImage,
